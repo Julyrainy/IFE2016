@@ -1,11 +1,178 @@
 body{
-  font-family:monospace sans-serif;
+  font-family:PingFang "Hiragino Sans GB W3" monospace sans-serif;
+  margin:0px; //body外边距设成0才可以使得下面所有元素贴近页边框
+  margin:0px;
+  background-color: #dedede;
 }
 
-nav ul{
-  list-style-type:none;
+header.top{/*想不到body上面的header也可以接受到属性。。。所以必须用类限定是body里的header*/
+  margin:0px;
+  background-color:#333333;
+  padding:5px 0px 5px 30px;
+}
+
+#headLogo{
+  width:120px;
+}
+
+nav{
+  float:right;
+  /*border:1px dashed green;*/
+
+}
+
+nav ul {
+  /*border:1px dashed blue;*/
+  float:right;
+  margin:0.5em;
 }
 
 nav ul li{
-  display:inline;
+  float:left;/*float不会重叠，只会顶在一起。*/
+  /*border:1px dashed #ffffff;*/
+  margin-right:1.5em;
+
+}
+
+nav ul li a{
+  text-decoration:none;
+}
+
+nav ul li a:visited{
+  color:#ffffff;
+}
+
+article,aside{
+  margin:15px;
+  padding:15px;
+  background-color:#ffffff;
+}
+
+h3{
+  color:#696E69;
+}
+
+p{
+  line-height:1.5em;
+}
+
+article p.author{
+  color:#696E69;
+  font-size: 0.8em;
+
+}
+
+p.indent{
+  text-indent: 2em;
+}
+
+ul.images{
+  list-style-type:none;
+}
+
+ul.images li{
+  border:1px solid #696E69;
+  text-align:center;
+  line-height:2em;
+  width:120px;
+  margin-bottom: 1em;
+}
+ul.images li img{
+  width:100px;
+}
+
+table,th,td{
+  border:1px solid #696E69;
+}
+
+table{
+  border-collapse:collapse;
+  width:100%;
+  font-size:0.8em;
+}
+
+th:nth-child(1),td:nth-child(1){
+  width:40%;
+
+}
+th:nth-child(2),td:nth-child(2){
+  width:40%;
+}
+
+td,th{
+  padding:5px;
+  text-align:left;
+}
+
+th{
+  background-color:#333333;
+  color:white;
+}
+
+tr:last-child{
+  background-color:#CCCCCC;
+}
+tr:last-child td{
+  border: none;
+}
+
+#sidebar h2{
+  font-size: 1em;
+  padding:10px;
+  margin-top:0px;
+  border-left:3px solid #CCCCCC;
+}
+
+#form{
+  display:table;
+  font-size:0.8em;
+  width:1000px;/*不希望元素跟着页面改变的时候直接定义具体的大小，而希望元素跟着页面大小改变的时候，就用% */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+div.tableRow{
+  display:table-row;
+}
+
+div.tableRow p{
+  display:table-cell;
+  padding:3px;
+  vertical-align:top;
+}
+
+div.tableRow p:nth-child(1){
+  text-align:right;
+}
+
+div.tableRow p textarea{
+  width:500px;
+  height:100px;
+}
+
+p.note{
+  color:#CCCCCC;
+}
+
+
+#submit{
+  margin-top: 15px;
+  width:100%;
+  height:40px;
+  color:white;
+  font-size:1em;
+  border:2px solid white;
+  background-color: #3355D0;
+  border-radius:10px;
+}
+
+footer{
+  background-color:#000000;
+  height:80px;
+  color:white;
+  text-align:center;
+  padding:10px;
+  margin-top:20px;
 }
