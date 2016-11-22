@@ -126,7 +126,7 @@ tr:last-child td{
 #form{
   display:table;
   font-size:0.8em;
-  width:1000px;/*不希望元素跟着页面改变的时候直接定义具体的大小，而希望元素跟着页面大小改变的时候，就用% */
+  width:500px;/*不希望元素跟着页面改变的时候直接定义具体的大小，而希望元素跟着页面大小改变的时候，就用% */
   margin-left: auto;
   margin-right: auto;
 }
