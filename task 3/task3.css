@@ -5,12 +5,54 @@ padding:0px;
 
 #bg{
   background-color:#eee;
+  padding:20px;
+  margin:20px;
+  border:1px solid #999;
+  min-height: 420px;
+  min-width:400px;
 }
 
 img{
   width:80px;
 }
 
-div{
-  background-color: white;
+div#left{
+  float:left;
+  width:160px;
+  padding:20px;
+
+  background-color:white;
+  border:1px solid #999;
+}
+
+div#left img{
+  vertical-align:top;
+  margin-right:10px;
+  border:1px solid #999;
+}
+
+div#right{
+  float:right;
+  width:80px;
+  padding:0px 20px 20px 20px;
+  background-color:white;
+  border:1px solid #999;
+}
+
+div#right img{
+  vertical-align:top;
+  margin-top:20px;
+}
+
+li{
+  padding:0px;
+  list-style:none;
+}
+
+div#center{
+  margin-left:220px;
+  margin-right:140px;
+  background-color:white;
+  padding:20px;
+  border:1px solid #999;
 }
